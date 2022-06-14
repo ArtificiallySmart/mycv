@@ -1,10 +1,19 @@
 ### Create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "test1@test.com",
+    "password": "password41"
+}
+
+### Sign in as existing user
 POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-    "email": "three3@asdf.com",
-    "password": "password1 "
+    "email": "test1@test.com",
+    "password": "password41"
 }
 
 ### Find particular user with given id
@@ -23,3 +32,10 @@ Content-Type: application/json
 {
     "password": "password2"
 }
+
+### Who am i?
+
+GET http://localhost:3000/auth/whoami
+
+### Sign out
+POST  http://localhost:3000/auth/signout

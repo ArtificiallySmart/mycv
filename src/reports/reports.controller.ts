@@ -11,11 +11,11 @@ import {
 import { CreateReportDto } from './dtos/create-report.dto';
 import { ReportDto } from './dtos/report.dto';
 import { ReportsService } from './reports.service';
-import { AuthGuard } from 'src/guards/auth.guard';
-import { AdminGuard } from 'src/guards/admin.guard';
-import { CurrentUser } from 'src/users/decorators/current-user.decorator';
-import { User } from 'src/users/user.entity';
-import { Serialize } from 'src/interceptors/serialize.interceptor';
+import { AuthGuard } from '../guards/auth.guard';
+import { AdminGuard } from '../guards/admin.guard';
+import { CurrentUser } from '../users/decorators/current-user.decorator';
+import { User } from '../users/user.entity';
+import { Serialize } from '../interceptors/serialize.interceptor';
 import { ApproveReportDto } from './dtos/approve-report.dto';
 import { GetEstimateDto } from './dtos/get-estimate.dto';
 
